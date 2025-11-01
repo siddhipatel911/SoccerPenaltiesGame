@@ -102,3 +102,32 @@ javac penaltiesgame/*.java
 
 # 3. run
 java penaltiesgame.PenaltiesGame
+```
+### Note:
+- You must run it from a directory where it can read/write highscores.txt, because the game saves player scores to that file after each round.
+
+- Make sure the images/ folder with all the .png/.jpg/.gif files is available in the same classpath so the GUI can load the graphics.
+
+---
+
+## What I Learned: 
+- Building a full GUI in Java Swing (panels, labels, buttons, images, layout).
+  
+- Using javax.swing.Timer for animation instead of blocking loops.
+
+- Switching views inside one JFrame instead of opening/closing new windows.
+  
+- Storing and reading persistent player data from a text file using java.io.
+  
+- Handling basic game state (max shots, goals scored, score display, reset on replay).
+
+---
+
+## Future improvements:
+- Difficulty levels (faster goalie, fewer shot attempts).
+
+- Sound effects on goal / save.
+  
+- More advanced high score sorting (e.g. auto-rank top 10).
+  
+- Export scores to CSV or database instead of a text file.
